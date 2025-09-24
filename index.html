@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            min-height: 100vh;
+            min-width: 100vw;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        video.bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        h1 {
+            color: yellow;
+            font-size: 200px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            animation: showText 1s ease 1s 1 forwards;
+            opacity: 0;
+        }
+
+        h2 {
+            color: yellow;
+            font-size: 80px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            opacity: 0;
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <video class="bg-video"
+        src="video.mp4"
+        autoplay loop muted></video>
+
+    <h1>SPEED</h1>
+    <h2>Accelerating Towards Success</h2>
+</body>
+
+</html>
