@@ -38,24 +38,31 @@
             object-fit: cover;
             z-index: -1;
         }
-
-        h1 {
-            color: yellow;
-            font-size: 200px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 600;
-            animation: showText 1s ease 1s 1 forwards;
-            opacity: 0;
+    
+        h1, h2{ 
+            color: white;
         }
 
-        h2 {
-            color: yellow;
-            font-size: 80px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 600;
-            opacity: 0;
+        h1{
+            font-size: 150px;
         }
-        
+
+        h2{
+            font-size: 100px;
+            animation: move 2s ease-in 1s forwards 1;
+        }
+
+
+        @keyframes move {
+            from{
+                transform: translateY(200px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
         
 
     </style>
